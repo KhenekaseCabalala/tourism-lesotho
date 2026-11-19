@@ -1,0 +1,209 @@
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore destinations, accommodation and activities in Lesotho.">
+    <title>Services  Lesotho Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark tourism-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Lesotho Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+                </ul>
+                <button id="themeToggle" class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0">Dark mode</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container py-5">
+    <section class="page-heading text-center mb-5">
+        <h1>Our Tourism Services</h1>
+        <p class="lead">Explore destinations, activities and accommodation options.</p>
+    </section>
+
+    <section class="mb-4">
+        <label for="destinationSearch" class="form-label fw-bold">Search destinations and activities</label>
+        <input type="search" id="destinationSearch" class="form-control"
+        
+            placeholder="Search mountains, hiking, accommodation">
+
+        <div class="d-flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter tourism services">
+            <button class="btn btn-success filter-btn active" data-filter="all">All</button>
+            <button class="btn btn-outline-success filter-btn" data-filter="destination">Destinations</button>
+            <button class="btn btn-outline-success filter-btn" data-filter="activity">Activities</button>
+            <button class="btn btn-outline-success filter-btn" data-filter="accommodation">Accommodation</button>
+        </div>
+        <p id="searchMessage" class="mt-3" aria-live="polite"></p>
+    </section>
+
+    <section class="row g-4" id="serviceList">
+        <article class="col-12 col-sm-6 col-lg-4 service-item" data-category="destination">
+            <div class="card tourism-card h-100">
+                <img src="maloti mountains.webp"
+                    class="card-img-top" alt="Mountain peaks and valleys">
+                <div class="card-body">
+                    <span class="badge text-bg-success">Destination</span>
+                    <h2 class="h5 mt-2">Maloti Mountains</h2>
+                    <p>Explore scenic mountain landscapes and enjoy photography.</p>
+                    <a href="contact.html" class="btn btn-success">Enquire</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-4 service-item" data-category="destination">
+            <div class="card tourism-card h-100">
+                <img src="water.webp"
+                    class="card-img-top" alt="Waterfall surrounded by nature">
+
+                <div class="card-body">
+                    <span class="badge text-bg-success">Destination</span>
+
+                    <h2 class="h5 mt-2">Waterfall Sightseeing</h2>
+                    <p>Plan a trip to explore the country's impressive waterfalls</p>
+
+                    <a href="contact.html" class="btn btn-success">Enquire</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-4 service-item" data-category="activity">
+            <div class="card tourism-card h-100">
+
+                <img src="hiking.webp"
+                    class="card-img-top" alt="People hiking on a mountain trail">
+                <div class="card-body">
+
+                    <span class="badge text-bg-primary">Activity</span>
+                    <h2 class="h5 mt-2">Hiking</h2>
+
+                    <p>Enjoy outdoor walks and discover beautiful landscapes.</p>
+
+                    <a href="contact.html" class="btn btn-success">Enquire</a>
+
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-4 service-item" data-category="activity">
+            <div class="card tourism-card h-100">
+
+                <img src="nature walks.webp"
+
+                    class="card-img-top" alt="A peaceful trail through nature">
+                <div class="card-body">
+
+                    <span class="badge text-bg-primary">Activity</span>
+
+                    <h2 class="h5 mt-2">Nature Walks</h2>
+                    <p>Experience fresh air, scenery and outdoor photography.</p>
+                    <a href="contact.html" class="btn btn-success">Enquire</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-4 service-item" data-category="accommodation">
+            <div class="card tourism-card h-100">
+
+                <img src="lodges and hotel.webp"
+                    class="card-img-top" alt="Hotel with outdoor swimming pool">
+                <div class="card-body">
+
+                    <span class="badge text-bg-warning">Accommodation</span>
+                    <h2 class="h5 mt-2">Hotels and Lodges</h2>
+
+                    <p>Explore accommodation options for your stay in Lesotho.</p>
+
+                    <a href="contact.html" class="btn btn-success">Enquire</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-4 service-item" data-category="accommodation">
+            <div class="card tourism-card h-100">
+
+                <img src="guest house.webp"
+
+                    class="card-img-top" alt="Small accommodation building in a natural setting">
+                <div class="card-body">
+
+                    <span class="badge text-bg-warning">Accommodation</span>
+
+                    <h2 class="h5 mt-2">Guest Houses</h2>
+                    <p>Look for guest houses that suit your travel plans and budget.</p>
+                    <a href="contact.html" class="btn btn-success">Enquire</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <p id="noResults" class="alert alert-warning mt-4" hidden>No matching services found, Try another search</p>
+
+    
+    <section class="calculator-box mt-5 p-4 rounded">
+        <h2>Tourism Cost Calculator</h2>
+        <p>Estimate the cost of an activity for your group</p>
+
+        <form id="calculatorForm">
+            <div class="mb-3">
+
+                <label for="activityChoice" class="form-label">Choose an activity</label>
+                <select id="activityChoice" class="form-select" required>
+
+                    <option value="150">Nature walk — LSL 150 per person</option>
+                    <option value="300">Guided hiking — LSL 300 per person</option>
+                    <option value="500">Cultural tour — LSL 500 per person</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="peopleCount" class="form-label">Number of people</label>
+                <input type="number" id="peopleCount" class="form-control"
+                    min="1" max="100" value="1" required>
+            </div>
+            <button type="submit" class="btn btn-success">Calculate Cost</button>
+        </form>
+
+        <p id="costResult" class="mt-3 fw-bold" aria-live="polite"></p>
+
+        <a href="contact.html" class="btn btn-outline-success">Make an Enquiry</a>
+    </section>
+</main>
+
+<footer class="site-footer text-center">
+
+
+
+<div class="container">
+    <p> 2026 Lesotho Tourism@</p>
+
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="contacts.html">Contacts</a>
+ <a href="destinations.html">Destinations</a>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
